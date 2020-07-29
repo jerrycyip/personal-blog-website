@@ -1,0 +1,184 @@
+html {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+}
+.grid-container {
+    display: grid;
+    /*width: 99vw;*/
+    width: 100%;
+    height: auto;
+    height: auto;
+    grid-template-rows: 40px 40px 500px 500px 500px 500px 40px;
+    grid-template-columns: 1fr;
+    /*grid-template-columns: repeat(auto-fill, minmax(1fr));*/
+    grid-row-gap: 10px;
+
+}
+
+.header {
+    grid-area: 1 / 1 / span 1 / span 1;
+    /* header navigation grid */
+    display: grid;
+    position: fixed;
+    /*width: 99vw;*/
+    grid-template-columns: 250px 1fr 90px 40px 40px 50px;
+    grid-template-areas: "title centergap search follow menu sidegap";
+    justify-items: end;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    background-color: #f0f0f5;
+
+}
+
+h1 {
+    display: inline-block;
+    grid-area: title;
+    font-size: 2em;
+    margin-left: .5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    vertical-align: middle;
+    place-self: center start;
+}
+h3 {
+    grid-area: centergap;
+    font-size: 1em;
+    place-self: center center;
+
+}
+.follow-button {
+    grid-area: follow;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.menu-button {
+    grid-area: menu;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+form.search-button {
+    grid-area: search;
+    font-size: 1em;
+    transform: scale(1.15);
+}
+input.search-button-large {
+    width: 50%; 115px;
+    border-radius: 4px;
+    height: 100%; 21px;
+    border: 1px solid black;
+    /*border-bottom: 1px solid grey;*/
+    outline: black;
+    transition: width 0.4s ease-in-out;
+    float: right;
+
+}
+input.search-button-small {
+    display: none;
+    width: 50%; 115px;
+    border-radius: 4px;
+    height: 100%; 21px;
+    border: 1px solid black;
+    outline: black;
+    transition: width 0.4s ease-in-out;
+    float: right;
+
+}
+
+/* search button behavior when clicked */
+input[class|='search']:focus {
+    border: 1px solid black;
+    width: 90%;
+    self-align: flex-start;
+/*    min-width:90px;*/
+    background-color: white;
+
+}
+input[class|='search']::placeholder {
+    color: black;
+    font-weight:bold;
+    font-family: Ferrara;
+    font-size: 1em;
+    font-weight: 600;
+}
+article {
+}
+.navbar {
+    grid-area: 2 / 1 / span 1 / span 1;
+    margin-left: 1em;
+    text-align: center;
+    /*grid-column:4 / span 8;*/
+}
+.content-1 {
+    grid-area: 3 / 1 / span 1 / span 1;
+    margin-left: 1em;
+}
+.content-2 {
+    grid-area: 4 / 1 / span 1 / span 1;
+    margin-left: 1em;
+}
+.content-3 {
+    grid-area: 5 / 1 / span 1 / span 1;
+    margin-left: 1em;
+}
+.content-4 {
+    grid-area: 6 / 1 / span 1 / span 1;
+    margin-left: 1em;
+}
+.footer {
+    grid-area: 7 / 1/ span 1/ span 1;
+    margin-left: 1em;
+}
+@media only screen and (max-width:720px) {
+/* responsive search bar */
+input.search-button-large {
+    display: none;
+}
+/* responsive search icon only*/
+input.search-button-small {
+    display: inline-block;
+
+}
+}
+@media only screen and (max-width:600px){
+    .grid-container {
+        grid-template-rows: 40px 40px 500px 500px 500px 500px 40px;
+    }
+    .header {
+        grid-template-columns: 200px 1fr 90px 35px 30px;
+        grid-template-areas: "title centerempty search follow menu sidegap";
+
+    }
+    /* responsive Blog Title */
+    h1 {
+        font-size: 1.5em;
+    }
+
+
+@media only screen and (max-width:460px){
+    /* responsive Blog Title */
+    h1 {
+        font-size: 1.25em;
+    }
+    .grid-container {
+        grid-template-rows: 30px 40px 500px 500px 500px 500px 40px;
+    }
+    .header {
+        grid-template-columns: 150px 1fr 90px 35px 30px;
+        grid-template-areas: "title centerempty search follow menu sidegap";
+
+    }
+}
