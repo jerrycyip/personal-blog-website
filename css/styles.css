@@ -202,8 +202,8 @@ input[class|='search']::placeholder {
     min-height: 100vh; /* override Safari bug */
     position: fixed;
     margin-top: 42px;
-    width: 300px;
-    right: -300px;
+    width: 240px;
+    right: -240px;
     background: white; #bfbfbf;
     z-index: 3;
     border-left: 1px solid #bfbfbf;
@@ -211,7 +211,7 @@ input[class|='search']::placeholder {
 }
 
 #about-me:target {
-  transform: translateX(-300px);
+  transform: translateX(-240px);
 }
 
 .close-about {
@@ -224,9 +224,9 @@ input[class|='search']::placeholder {
 .profile-pic {
     display: block;
     margin-top: 10px;
-    margin-left: 5%;
-    width: 90%;
-    height: 30%;
+    margin-left: 8%;
+    width: 85%;
+    height: 20%;
     border-radius: 5px;
     top: 50%;
     left: 20%;
@@ -240,17 +240,17 @@ input[class|='search']::placeholder {
 .about-blurb {
     display: block;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
 
 .top-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 400px 1fr;
     grid-template-areas: "left center right";
     grid-template-rows: 2fr;
     text-align: center;
-
 }
 h3 {
     display: inline-block;
@@ -480,7 +480,7 @@ input.search-button-small {
     display: inline-block;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 5px;
     /*place-self: center center;*/
     text-align: center;
@@ -490,9 +490,20 @@ h2 {
     /*place-self: center center;*/
     text-align: center;
 }
+h3 {
+    font-size: .85em;
+    grid-area: center;
+}
 .logo{
     transform: scale(1.25);
     vertical-align: baseline;
+}
+#about-me {
+    width: 200px;
+    right: -200px;
+}
+#about-me:target {
+    transform: translateX(-200px);
 }
 }
 @media only screen and (max-width:600px){
@@ -503,19 +514,22 @@ h2 {
         grid-template-columns: 290px 1fr 90px 35px 30px;
 
     }
-    h3 {
-        font-size:1em;
-        grid-area: center;
+    #dashboard, #about-me {
+        margin-top: 40px;
     }
     /* responsive Blog Title */
     h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         margin-bottom: 5px;
         /*place-self: center center;*/
         text-align: center;
     }
+    h3 {
+        font-size:.75em;
+        grid-area: center;
+    }
     h2 {
-        font-size: .65em;
+        font-size: .7em;
         /*place-self: center center;*/
         text-align: center;
     }
@@ -525,17 +539,24 @@ h2 {
 
 
 @media only screen and (max-width:460px){
-    /* responsive Blog Title */
-    h1 {
-        font-size: 1.25em;
-    }
-    h3 {
-        font-size:.75em;
-    }
+
     .grid-container {
         grid-template-rows: 30px 50px 500px 500px 500px 500px 40px;
     }
     .navbar {
         grid-template-columns: 210px 1fr 75px 35px 30px;
     }
+
+    #dashboard, #about-me {
+        margin-top: 30px;
+    }
+
+    /* responsive Blog Title */
+    h1 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size:.7em;
+    }
+
 }
