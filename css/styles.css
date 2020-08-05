@@ -224,6 +224,13 @@ input[class|='search']::placeholder {
 .profile-pic {
     display: block;
     margin-top: 10px;
+    margin-left: 5%;
+    width: 90%;
+    height: 30%;
+    border-radius: 5px;
+    top: 50%;
+    left: 20%;
+    object-fit: cover;
 }
 .about-title {
     display: block;
@@ -231,9 +238,8 @@ input[class|='search']::placeholder {
     text-align: center;
 }
 .about-blurb {
-
     display: block;
-    text-align: left;
+    text-align: center;
     margin-left: 15px;
 
 }
@@ -322,29 +328,37 @@ h2 {
     font-style: italic;
 }
 
-h4.content-border {
-    margin-top: 0px;
-    font-size: 1.1em;
-    border-top: 1px solid #bfbfbf;
-}
-
-
 .content-1 {
     grid-area: 3 / 1 / span 1 / span 1;
+    padding-top: 40px;
+    margin-top: -40px;
+}
+.content-areas {
+    display: grid;
+    grid-template-rows: 40px 460px;
+    grid-template-areas: "title" "content";
+}
+
+.content-flex {
+    grid-area: "content";
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     overflow-y: hidden;
     position: relative;
-    border-bottom: 2px solid grey;
-
 }
 
-
+h4.content-border {
+    margin-top: 0px;
+    font-size: 1.1em;
+    border-top: 1px solid #bfbfbf;
+    grid-area: "title";
+}
 .content-title {
     position: absolute;
     margin-left: 1em;
-    margin-top: 5px;
+    margin-top: .5em;
+    color: #696969;
 }
 .blog-post-container {
     position: relative;
@@ -352,7 +366,6 @@ h4.content-border {
     width: 360px;
     margin-left: 25px;
     margin-right: 25px;
-    margin-top: 40px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -433,25 +446,21 @@ div.blog-title-info2 {
 
 .content-2 {
     grid-area: 4 / 1 / span 1 / span 1;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    border-bottom: 2px solid grey;
+    padding-top: 40px;
+    margin-top: -40px;
 
 }
 
-.content-2:hover {
-    overflow-x:scroll;
-}
+
 .content-3 {
     grid-area: 5 / 1 / span 1 / span 1;
-
+    padding-top: 40px;
+    margin-top: -40px;
 }
 .content-4 {
     grid-area: 6 / 1 / span 1 / span 1;
-
+    padding-top: 40px;
+    margin-top: -40px;
 }
 
 
