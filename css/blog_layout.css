@@ -76,6 +76,7 @@ article.blog-content {
     background-color: grey;
     color: white;
 }
+
 div.blog-reaction-container {
     display: block;
     bottom: 0px;
@@ -113,4 +114,15 @@ ul.blog-reactions li a {
     margin-left: 55px;
     margin-right: 60px;*/
     transform: scale(.9);
+}
+input {
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+input[type="text"]:focus {
+}
+input[type="submit"] {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
 }
