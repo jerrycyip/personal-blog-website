@@ -1,12 +1,13 @@
 /* import auxillary css stylesheets */
-/* overall grid layout using css grid */
-@import "layout.css";
+
+/* overall blog layout */
+@import "blog_layout.css";
+
 /* top navigation bar and sidebar navigation including about me */
 @import "navigation.css";
-/* content sections for blog posts using flexbox containers */
-@import "content.css";
+
 /* mobile responsive rules */
-@import "mobile_responsive.css";
+@import "blog_responsive.css";
 
 html {
 }
@@ -19,4 +20,5 @@ html {
 }
 
 body {
+
 }

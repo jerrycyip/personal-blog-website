@@ -1,0 +1,116 @@
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 42px 195px 1fr 15px 30px;
+    grid-template-areas: "navbar" "heading" "blog-content" "bottom-gap" "footer";
+    grid-template-columns: 1fr;
+}
+
+.content-wrapper {
+    grid-area: blog-content;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "left-gap center-content right-gap";
+}
+
+.blog-container {
+    grid-area: center-content;
+    width: 900px;
+    max-width: 95vw;
+}
+
+h2.blog-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #696969;
+    text-align: center;
+}
+
+div.blog-photo-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-height: 410px;
+
+}
+
+img.blog-photo {
+    width: 100%;
+    max-height: 410px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+h6.blog-timestamp {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8); white;
+    text-align: left;
+    z-index: 1;
+    background: rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+article.blog-content {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    text-align: left;
+    /* max column count */
+    column-count: 2;
+    /* min column width */
+    column-width: 300px;
+}
+
+.footer {
+    grid-area: footer;
+    /*bottom: 0px;
+    width: 100%;*/
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+div.blog-reaction-container {
+    display: block;
+    bottom: 0px;
+    min-height: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #bfbfbf;
+    opacity: 0.7;
+}
+ul.blog-reactions {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-around;
+}
+ul.blog-reactions li {
+    /*position: relative;
+    float: left;*/
+    display: block; table-cell;
+    text-align: center;
+}
+ul.blog-reactions li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    margin-top: 5px;
+    /*left: 50%;
+    margin-left: 55px;
+    margin-right: 60px;*/
+    transform: scale(.9);
+}
