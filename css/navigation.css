@@ -67,6 +67,8 @@ h1 a {
     text-align: center;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    /* menu appears as floating card w/out need for border */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .social-media a {
@@ -155,7 +157,7 @@ input[class|='search']::placeholder {
 .heading {
     grid-area: heading;
     background-image: url("../images/IMG_9074.jpeg");
-    background-position: 50% 40%; center;
+    background-position: 50% 40%;
     background-size: cover;
 }
 

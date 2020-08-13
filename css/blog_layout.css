@@ -1,7 +1,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-rows: 42px 195px 1fr 15px 30px;
+    grid-template-rows: 42px 195px 1fr 15px 29px;
     grid-template-areas: "navbar" "heading" "blog-content" "bottom-gap" "footer";
     grid-template-columns: 1fr;
 }
