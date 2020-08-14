@@ -167,8 +167,9 @@ ul.blog-reactions {
 ul.blog-reactions li {
     /*position: relative;
     float: left;*/
-    display: block; table-cell;
+    display: block;
     text-align: center;
+    padding: 0;
 }
 ul.blog-reactions li a {
     position: relative;
