@@ -36,7 +36,7 @@ h3.top-menu {
 
 @media only screen and (max-width:600px) {
     .grid-container {
-        grid-template-rows: 42px 95px 1fr 15px 30px;
+        grid-template-rows: 42px 95px 1fr 15px;
     }
 
     .navbar {
@@ -77,20 +77,28 @@ h3.top-menu {
     .about-title {
         font-size: 1em;
     }
+    .social-media {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        right: 40px;
+    }
 }
 
 @media only screen and (max-width:460px){
     .grid-container {
-        grid-template-rows: 35px 90px 1fr 15px 44px;
+        grid-template-rows: 35px 90px 1fr 15px;
+        padding-bottom: 44px;    /* Footer height */
     }
 
     .navbar {
-        grid-template-columns: 210px 1fr 75px 35px 35px 10px;
-
+        grid-template-columns: 195px 1fr 40px 30px 30px 10px; /* 210px 1fr 75px 35px 35px 10px;*/
+    }
+    .top-nav {
+        grid-template-columns: 1fr 300px 1fr;
     }
     /* responsive Blog Title */
     h1 {
-        font-size: 1.2em;
+        font-size: 1.15em; 1.2em;
     }
     h3.top-menu {
         font-size: 0.7em;
@@ -103,17 +111,28 @@ h3.top-menu {
         column-count: 1;
     }
     #dashboard, #about-me {
-        margin-top: 30px;
+        margin-top: 35px;
     }
     #dashboard a {
         font-size: 0.85em;
     }
     .footer {
+        height: 44px;
         padding-bottom: 1px;
         padding-top: 3px;
         font-size: 0.95em;
     }
+
     #subscribe-label {
         display: block;
+    }
+    .follow-button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .social-media {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        right: 36px;
     }
 }

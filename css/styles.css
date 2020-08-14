@@ -3,8 +3,6 @@
 @import "layout.css";
 /* top navigation bar and sidebar navigation including about me */
 @import "navigation.css";
-/* content sections for blog posts using flexbox containers */
-@import "content.css";
 /* mobile responsive rules */
 @import "mobile_responsive.css";
 

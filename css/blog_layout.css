@@ -1,9 +1,14 @@
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
 .grid-container {
     display: grid;
-    grid-template-rows: 42px 195px 1fr 15px 29px;
-    grid-template-areas: "navbar" "heading" "blog-content" "bottom-gap" "footer";
+    grid-template-rows: 42px 195px 1fr 15px;
+    grid-template-areas: "navbar" "heading" "blog-content" "bottom-gap";
     grid-template-columns: 1fr;
+    padding-bottom: 29px;    /* Footer height */
 }
 
 .content-wrapper {
@@ -18,6 +23,10 @@
     grid-area: center-content;
     width: 900px;
     max-width: 95vw;
+}
+.bottom-gap {
+    grid-area: bottom-gap;
+    height: 100%;
 }
 
 h2.blog-title {
@@ -66,16 +75,29 @@ article.blog-content {
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 29px;            /* Footer height */
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+/*
+.footer {
     grid-area: footer;
-    /*bottom: 0px;
-    width: 100%;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding-bottom: 5px;
     padding-top: 5px;
     text-align: center;
     background-color: grey;
     color: white;
 }
-
+*/
 div.blog-reaction-container {
     display: block;
     bottom: 0px;
