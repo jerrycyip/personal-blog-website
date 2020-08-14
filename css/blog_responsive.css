@@ -1,13 +1,5 @@
 /* responsive behavior */
 @media only screen and (max-width:720px) {
-/* responsive search bar */
-input.search-button-large {
-    display: none;
-}
-/* responsive search icon only*/
-input.search-button-small {
-    display: inline-block;
-}
 h1 {
     font-size: 1.5em;
     margin-bottom: 5px;

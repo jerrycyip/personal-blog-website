@@ -110,50 +110,16 @@ h1 a {
     text-decoration: none;
     color: white;
 }
-form .search {
-    vertical-align: text-bottom;
-}
 form.search-button {
     grid-area: search;
     font-size: 1em;
     transform: scale(1.15);
-
-}
-input.search-button-large {
-    width: 50%;
-    border-radius: 4px;
-    height: 100%;
-    border: 1px solid black;
-    transition: width 0.4s ease-in-out;
-    float: right;
-}
-input.search-button-small {
-    display: none;
-    width: 50%;
-    border-radius: 4px;
-    height: 100%;
-    border: 1px solid black;
-    transition: width 0.4s ease-in-out;
-    float: right;
-
 }
 
-/* search button behavior when clicked */
-input[class|='search']:focus {
-    border: 1px solid black;
-    width: 90%;
-    self-align: flex-start;
-/*    min-width:90px;*/
-    background-color: white;
+form .search {
+    vertical-align: text-bottom;
+}
 
-}
-input[class|='search']::placeholder {
-    color: black;
-    font-weight: bold;
-    font-family: Ferrara;
-    font-size: 1em;
-    font-weight: 600;
-}
 .heading {
     grid-area: heading;
     background-image: url("../images/IMG_9074.jpeg");
