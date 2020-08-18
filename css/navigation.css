@@ -61,8 +61,8 @@ h1 a {
     width: 43px;
     height: auto;
     position: absolute;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     right: 50px;
     text-align: center;
     border-bottom-left-radius: 5px;
@@ -84,23 +84,30 @@ h1 a {
     height: auto;
     background-color: black; #bfbfbf;
     border-radius: 50%;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 #ig-logo {
     width: 67%;
     height: auto;
     margin-top: 3px;
 }
-#tw-logo {
-    width: 75%;
+#gh-logo {
+    width: 67%;
     height: auto;
-    background-color: black; #bfbfbf;
+}
+#tw-logo {
+    width: 70%;
+    height: auto;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid black;
 
 }
 #li-logo {
     width: 70%;
     height: auto;
     margin-left: 3px;
+    margin-top: 3px;
     /*background-color: black; #bfbfbf;
     border-color: 1px solid black;*/
 }

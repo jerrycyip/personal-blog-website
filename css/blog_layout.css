@@ -141,7 +141,7 @@ article.blog-content {
     max-width: 40px;
     width: 40px;
     height: auto;
-    /*width: auto;*/
+    margin-bottom: 2px;
 
 }
 .ig-logo {
@@ -151,14 +151,16 @@ article.blog-content {
     width: 40px;
     height: auto;
     max-height: 34px;
+    margin-bottom: 3px;
 }
 .tw-logo {
     /*transform: scale(0.25);*/
-    max-width: 44px;
-    width: 44px;
+    max-width: 42px;
+    width: 42px;
     height: auto;
     background-color: black;
     border-radius: 50%;
+    border: 1px solid black;
 
 }
 .li-logo {
