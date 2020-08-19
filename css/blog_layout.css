@@ -78,18 +78,6 @@ h6.blog-timestamp {
     padding: 0px 5px;
     font-size: 0.8em;
 }
-.blog-author {
-    display: inline;
-    text-decoration: none;
-    color: black;
-    text-decoration: underline;
-    /*text-align: left;
-    background: rgba(0.5, 0.5, 0.5, 0.5);
-    color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;*/
-    margin-left: 10px;
-    padding: 0;
-}
 
 article.blog-content {
     margin-top: 10px;
@@ -101,7 +89,21 @@ article.blog-content {
     /* min column width */
     column-width: 300px;
 }
-
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10%; 40px;
+  margin-right: 10%; 40px;
+}
+.blog-author {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    margin-left: 10px;
+    padding: 0;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -114,6 +116,64 @@ article.blog-content {
   background-color: grey;
   color: white;
   z-index: -1;
+}
+
+div.blog-reaction-container {
+    position: relative;
+    display: block;
+    bottom: 0px;
+    min-height: 30px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #bfbfbf;
+    /*opacity: 0.7;*/
+}
+ul.blog-reactions {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul.blog-reactions li {
+    display: block;
+    text-align: center;
+}
+ul.blog-reactions li  button{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    margin-top: 4px;
+    /*left: 50%;
+    margin-left: 55px;
+    margin-right: 60px;*/
+    transform: scale(.9);
+}
+.reaction-button {
+    color: white;
+    background-color: #bfbfbf;
+    border: none;
+    /* margin-top: 5px;
+    vertical-align: middle;*/
+}
+.reaction-button:hover {
+    cursor: pointer;
+}
+.reaction-button:active {
+    outline: 0;
+    color: lightblue;
+}
+.reaction-button:focus {
+    outline: 0;
+    color: lightblue;
+
 }
 
 .social-sharing {
@@ -140,9 +200,7 @@ article.blog-content {
     font-size: 1.2em;
     letter-spacing: 1.2px;
     margin-top: -4px;
-
-    /*margin-top: 4px;
-    margin-right: 5px;*/
+    padding-left: 30px;
 }
 .social-sharing button {
     /*display: inline-block;*/
@@ -202,64 +260,6 @@ article.blog-content {
 
     /*background-color: black; #bfbfbf;
     border-color: 1px solid black;*/
-}
-div.blog-reaction-container {
-    position: relative;
-    display: block;
-    bottom: 0px;
-    min-height: 30px;
-    height: 30px;
-    margin: 0;
-    padding: 0;
-    border-radius: 5px;
-    background-color: #bfbfbf;
-    /*opacity: 0.7;*/
-}
-ul.blog-reactions {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-.reaction-button {
-    color: white;
-    background-color: #bfbfbf;
-    border: none;
-    /* margin-top: 5px;
-    vertical-align: middle;*/
-}
-.reaction-button:hover {
-    cursor: pointer;
-}
-.reaction-button:active {
-    outline: 0;
-    color: lightblue;
-}
-.reaction-button:focus {
-    outline: 0;
-    color: lightblue;
-
-}
-ul.blog-reactions li {
-    /*position: relative;
-    float: left;*/
-    display: block; table-cell;
-    text-align: center;
-}
-ul.blog-reactions li  button{
-    position: relative;
-    text-decoration: none;
-    color: white;
-    z-index: 2;
-    margin-top: 4px;
-    /*left: 50%;
-    margin-left: 55px;
-    margin-right: 60px;*/
-    transform: scale(.9);
 }
 input {
     border-radius: 2px;

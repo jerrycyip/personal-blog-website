@@ -232,8 +232,12 @@ form .search {
 .about-title {
     display: block;
     margin-top: 10px;
-    text-align: center;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }
+p {margin-left: 15px}
 .about-blurb {
     display: block;
     text-align: center;
