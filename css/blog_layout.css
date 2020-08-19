@@ -36,12 +36,14 @@ h2.blog-title {
     text-align: center;
 }
 
-div.blog-photo-container {
+.blog-photo-container {
     display: inline-block;
     position: relative;
     width: 100%;
     max-height: 410px;
 }
+
+
 
 img.blog-photo {
     width: 100%;
@@ -61,6 +63,32 @@ h6.blog-timestamp {
     background: rgba(0.5, 0.5, 0.5, 0.5);
     border-radius: 5px;
     padding: 0px 5px;
+}
+.photo-caption {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8); white;
+    text-align: left;
+    z-index: 1;
+    background: rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-size: 0.8em;
+}
+.blog-author {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    /*text-align: left;
+    background: rgba(0.5, 0.5, 0.5, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;*/
+    margin-left: 10px;
+    padding: 0;
 }
 
 article.blog-content {
@@ -111,10 +139,12 @@ article.blog-content {
     font-weight: 600;
     font-size: 1.2em;
     letter-spacing: 1.2px;
+    margin-top: -4px;
+
     /*margin-top: 4px;
     margin-right: 5px;*/
 }
-.social-sharing a {
+.social-sharing button {
     /*display: inline-block;*/
     z-index: 2;
     opacity: 1.0;
@@ -130,16 +160,17 @@ article.blog-content {
     flex-direction: row;
     /*align-items: stretch;
     justify-content: space-around;*/
-    align-items: center;
+    align-items: center; middle;
     justify-content: space-around;
+    padding-top: 3px;
     z-index: 2;
     opacity: 1.0;
 }
 .fb-logo {
     background-color: black; #bfbfbf;
     border-radius: 50%;
-    max-width: 40px;
-    width: 40px;
+    max-width: 35px;
+    width: 35px;
     height: auto;
     margin-bottom: 2px;
 
@@ -147,16 +178,16 @@ article.blog-content {
 .ig-logo {
     /*transform: scale(0.2);*/
 
-    max-width: 40px;
-    width: 40px;
+    max-width: 35px;
+    width: 35px;
     height: auto;
     max-height: 34px;
     margin-bottom: 3px;
 }
 .tw-logo {
     /*transform: scale(0.25);*/
-    max-width: 42px;
-    width: 42px;
+    max-width: 37px;
+    width: 37px;
     height: auto;
     background-color: black;
     border-radius: 50%;
@@ -164,8 +195,8 @@ article.blog-content {
 
 }
 .li-logo {
-    max-width: 40px;
-    width: 40px;
+    max-width: 35px;
+    width: 35px;
     height: auto;
     max-height: 34px;
 
@@ -191,8 +222,27 @@ ul.blog-reactions {
     list-style: none;
     display: flex;
     width: 100%;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
+}
+.reaction-button {
+    color: white;
+    background-color: #bfbfbf;
+    border: none;
+    /* margin-top: 5px;
+    vertical-align: middle;*/
+}
+.reaction-button:hover {
+    cursor: pointer;
+}
+.reaction-button:active {
+    outline: 0;
+    color: lightblue;
+}
+.reaction-button:focus {
+    outline: 0;
+    color: lightblue;
+
 }
 ul.blog-reactions li {
     /*position: relative;
@@ -200,12 +250,12 @@ ul.blog-reactions li {
     display: block; table-cell;
     text-align: center;
 }
-ul.blog-reactions li a {
+ul.blog-reactions li  button{
     position: relative;
     text-decoration: none;
     color: white;
     z-index: 2;
-    margin-top: 5px;
+    margin-top: 4px;
     /*left: 50%;
     margin-left: 55px;
     margin-right: 60px;*/

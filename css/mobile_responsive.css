@@ -19,11 +19,11 @@ h3.top-menu {
     transform: scale(1.25);
     vertical-align: baseline;
 }
-#about-me {
+#author-info {
     width: 200px;
     right: -200px;
 }
-#about-me:target {
+#author-info:target {
     transform: translateX(-200px);
 }
 #dashboard a {
@@ -59,7 +59,7 @@ h3.top-menu {
     .logo{
         transform: scale(1);
     }
-    #dashboard, #about-me {
+    #dashboard, #author-info {
         margin-top: 40px;
     }
     #dashboard a {
@@ -90,7 +90,7 @@ h3.top-menu {
         font-size: 0.7em;
     }
 
-    #dashboard, #about-me {
+    #dashboard, #author-info {
         margin-top: 35px;
     }
     #dashboard a {

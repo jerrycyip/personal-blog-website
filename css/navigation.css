@@ -185,7 +185,7 @@ form .search {
     transform: scale(1.4);
 }
 
-#about-me {
+#author-info {
     /*height: 100vh;*/
     transition: transform .3s ease-in-out;
     top: 0;
@@ -201,10 +201,16 @@ form .search {
     line-height: 1.5em;
 }
 
-#about-me:target {
+#author-info:target {
   transform: translateX(-240px);
 }
-
+#author-info ul {
+    width: 85%;
+    display: block;
+    text-align: left;
+    margin-left: 25px;
+    list-style: circle;
+}
 .close-about {
     margin-top: 5px;
     margin-left: 2px;
@@ -217,7 +223,7 @@ form .search {
     margin-top: 10px;
     margin-left: 8%;
     width: 85%;
-    height: 20%;
+    height: 17%;
     border-radius: 5px;
     top: 50%;
     left: 20%;
