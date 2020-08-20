@@ -20,29 +20,5 @@ html {
 }
 
 body {
-    
-}
-.fb-logo {
-    width: 67%;
-    height: auto;
-    background-color: black; #bfbfbf;
-    border-radius: 50%;
-}
-.ig-logo {
-    width: 67%;
-    height: auto;
-    margin-top: 3px;
-}
-.tw-logo {
-    width: 67%;
-    height: auto;
-    background-color: black; #bfbfbf;
 
-}
-.li-logo {
-    width: 67%;
-    height: auto;
-    margin-left: 3px;
-    /*background-color: black; #bfbfbf;
-    border-color: 1px solid black;*/
 }

@@ -240,28 +240,27 @@ ul.blog-reactions li  button{
     z-index: 2;
     opacity: 1.0;
 }
+
 .fb-logo {
     background-color: black; #bfbfbf;
     border-radius: 50%;
     max-width: 35px;
-    width: 35px;
+    width: 67%;
     height: auto;
     margin-bottom: 2px;
 
 }
 .ig-logo {
-    /*transform: scale(0.2);*/
-
     max-width: 35px;
-    width: 35px;
+    width: 67%;
     height: auto;
     max-height: 34px;
-    margin-bottom: 3px;
+    /*margin-bottom: 3px;*/
 }
 .tw-logo {
     /*transform: scale(0.25);*/
     max-width: 37px;
-    width: 37px;
+    width: 67%;
     height: auto;
     background-color: black;
     border-radius: 50%;
@@ -270,12 +269,10 @@ ul.blog-reactions li  button{
 }
 .li-logo {
     max-width: 35px;
-    width: 35px;
+    width: 67%;
     height: auto;
     max-height: 34px;
 
-    /*background-color: black; #bfbfbf;
-    border-color: 1px solid black;*/
 }
 input {
     border-radius: 2px;
