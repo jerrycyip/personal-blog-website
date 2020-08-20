@@ -232,15 +232,12 @@ ul.blog-reactions li  button{
 .sharing-dropdown:hover .social-sharing {
     display: flex;
     flex-direction: row;
-    /*align-items: stretch;
-    justify-content: space-around;*/
-    align-items: center; middle;
+    align-items: center;
     justify-content: space-around;
     padding-top: 3px;
     z-index: 2;
     opacity: 1.0;
 }
-
 .fb-logo {
     background-color: black; #bfbfbf;
     border-radius: 50%;
