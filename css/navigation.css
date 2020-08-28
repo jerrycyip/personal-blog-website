@@ -130,9 +130,11 @@ form.search-button {
 
 form .search {
     vertical-align: text-bottom;
+    text-decoration: none;
+    color: white;
 }
 
-.heading {
+.heading, .page__header {
     grid-area: heading;
     background-image: url("../images/IMG_9074.jpeg");
     background-position: 50% 40%;
@@ -248,7 +250,7 @@ form .search {
     margin-right: 10px;
 }
 
-.top-nav {
+.top-nav, .navbar__menu {
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
     grid-template-areas: "left center right";
@@ -259,30 +261,48 @@ h3.top-menu {
     display: inline-block;
     grid-area: 1 / 2 / span 1/ span 1;
     font-size: 1em;
-    /*margin-left: .5em;*/
     margin-bottom: 0;
     padding: 0;
     vertical-align: middle;
-    /*text-align: center;*/
-    /*place-self: center start;*/
 }
 
 .top-nav h3 ul {
     list-style: none;
     margin-top: 10px;
 }
-h3 li {
+.navbar__menu h3 ul {
+    list-style: none;
+    margin-top: 10px;
+}
+#navbar__list li{
     display: inline-block;
     color: white;
+    /* rebuild of menu as dynamic content*/
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
 }
-h3 a, span {
+#navbar__list li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar__list li span {
+    cursor: default;
+}
+/*
+.side-menu a, span {
     text-decoration: none;
     color: white;
     font-size: 1.3em;
     font-weight: 500;
     text-align: center;
 }
-
+*/
 h2.title-description {
     font-size: 1em;
     color: white;

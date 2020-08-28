@@ -11,10 +11,7 @@
     <!--  all styling placed in linked stylesheets-->
     <style>
     </style>
-    <!-- js scripts not in scope until next project-->
-    <script>
-    </script>
-    </head>
+        </head>
     <body>
         <main class="grid-container">
                 <nav class="navbar">
@@ -38,16 +35,13 @@
             </div>
                 <a class="material-icons menu-button" href=#dashboard>dashboard</a>
             </nav>
-            <header class="heading">
-                <nav class="top-nav">
+            <!-- HTML Follows BEM naming conventions
+            IDs are only used for sections to connect menu achors to sections -->
+            <header class="page__header">
+                <nav class="navbar__menu">
                     <h3 class="top-menu">
-                        <ul>
-                            <li><a href=#author-info>About</a><span> | </span></li>
-                            <li><a href=#latest>Latest</a><span> | </span></li>
-                            <li><a href=#travel>Travel</a><span> | </span></li>
-                            <li><a href=#eats>Eats</a><span> | </span></li>
-                            <li><a href=#thoughts>Thoughts</a></li>
-                        </ul>
+                        <!-- Navigation starts as empty UL that will be populated with JS -->
+                        <ul id="navbar__list"></ul>
                     </h3>
                     <h2 class="title-description">A blog about my life</h2>
                 </nav>
@@ -80,7 +74,11 @@
                     </li>
                 </ul>
             </div>
-                <div class="content-1"  id="latest">
+            <!-- Each Section has an ID (used for the anchor) and
+            a data attribute that will populate the li node.
+            Adding more sections will automatically populate nav.
+            The first section is set to active class by default -->
+                <section class="content-section your-active-class" id="latest" data-nav="Latest">
                     <div class="content-areas">
                     <h4 class="content-border">
                         <div class="content-title">Latest</div>
@@ -301,8 +299,8 @@
                 </div>
             </div>
             </div>
-        </div>
-                <div class="content-2" id="travel">
+        </section>
+                <section class="content-section" id="travel" data-nav="Travel">
                     <div class="content-areas">
                     <h4 class="content-border">
                         <div class="content-title">Travel</div>
@@ -478,8 +476,8 @@
                 </div>
             </div>
         </div>
-    </div>
-                <div class="content-3" id="eats">
+    </section>
+                <section class="content-section" id="eats" data-nav="Eats">
                     <div class="content-areas">
                         <h4 class="content-border">
                             <div class="content-title">Eats</div>
@@ -656,8 +654,8 @@
                     </div>
                         </div>
                     </div>
-                </div>
-                <div class="content-4" id="thoughts">
+                </section>
+                <section class="content-section" id="thoughts" data-nav="Thoughts">
                     <div class="content-areas">
                         <h4 class="content-border">
                             <div class="content-title">Thoughts</div>
@@ -834,12 +832,14 @@
                         </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <footer class="footer">
                     <label id="subscribe-label" for="email">Subscribe to Daily Snapshots&nbsp</label>
                     <input type="text" id="email" name="email" placeholder=" email address">
                     <input type="submit" value="Subscribe">
                 </footer>
             </main>
+            <script src="js/app.js">
+            </script>
         </body>
         </html>

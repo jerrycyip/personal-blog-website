@@ -6,28 +6,19 @@
     grid-template-columns: 1fr;
 }
 
-.content-1 {
-    grid-area: content1; /* 3 / 1 / span 1 / span 1;*/
-    /* opposing top padding & margin allow for title to show when clicking navigation links */
-    padding-top: 40px;
-    margin-top: -40px;
+#latest {
+    grid-area: content1;
 }
-.content-2 {
-    grid-area: content2; /* 4 / 1 / span 1 / span 1; */
-    /* opposing top padding & margin allow for title to show when clicking navigation links */
-    padding-top: 40px;
-    margin-top: -40px;
+#travel {
+    grid-area: content2;
 }
-
-.content-3 {
-    grid-area: content3; /* 5 / 1 / span 1 / span 1; */
-    /* opposing top padding & margin allow for title to show when clicking navigation links */
-    padding-top: 40px;
-    margin-top: -40px;
+#eats {
+    grid-area: content3;
 }
-.content-4 {
-    grid-area: content4; /* 6 / 1 / span 1 / span 1; */
-    /* opposing top padding & margin allow for title to show when clicking navigation links */
+#thoughts {
+    grid-area: content4;
+}
+.content-section {
     padding-top: 40px;
     margin-top: -40px;
 }
