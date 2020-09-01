@@ -172,8 +172,8 @@ form .search {
 #dashboard a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
-    font-size: 1.1em;
+/*    font-weight: 500;
+    font-size: 1.1em;*/
 }
 
 .close-sidebar {
@@ -280,7 +280,7 @@ h3.top-menu {
     /* rebuild of menu as dynamic content*/
     text-decoration: none;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 500;
     text-align: center;
     vertical-align: middle;
@@ -293,6 +293,13 @@ h3.top-menu {
 
 #navbar__list li span {
     cursor: default;
+}
+h3.side-menu {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.side-menu li {
+    cursor: pointer;
 }
 /*
 .side-menu a, span {

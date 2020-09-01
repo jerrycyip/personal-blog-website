@@ -29,9 +29,11 @@ h3.top-menu {
 #author-info:target {
     transform: translateX(-200px);
 }
+
 #dashboard a {
     font-size: 1em;
 }
+
 }
 
 @media only screen and (max-width:600px) {
@@ -71,9 +73,11 @@ h3.top-menu {
     #author-info {
         margin-top: 40px;
     }
+
     #dashboard a {
         font-size: 0.95em;
     }
+
     .about-title {
         font-size: 1em;
     }
@@ -112,10 +116,13 @@ h3.top-menu {
     }
     #dashboard, #author-info {
         margin-top: 35px;
+        font-size: 0.8em;
     }
+/*
     #dashboard a {
         font-size: 0.85em;
     }
+*/
     .footer {
         height: 44px;
         padding-bottom: 1px;
