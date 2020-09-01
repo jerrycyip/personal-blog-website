@@ -22,7 +22,7 @@ The supporting javascript file, "app.js", controls dynamic functionality on the 
 - active state to indicate the main viewable 'section' that is currently being viewed.
 
 The navigation menus are created based on the different 'sections' of the blog landing page (i.e. blog topics such as 'latest'/'travel'/'eats'/'thoughts') such that as new sections are added or removed the top and side navigation menus would be updated accordingly.  Note, the menus' 'about' link (and 'home' link for the side menu) is static as it is a permanent feature of the blog website.  When clicking these menu links, the page automatically scrolls to that section.
-To achieve said functionality, JavaScript functions and event listeners are employed to allow for DOM manipulation as well as toggling of CSS classes on the different 'active/inactive' sections' HTML elements.  Possible future enhancements (not part of current project requirements) might include expandable/collapsible side menu options for each section that link to individual blog posts by date.
+To achieve said functionality, JavaScript functions and event listeners are employed to allow for DOM manipulation as well as toggling of CSS classes on the different 'active/inactive' sections' HTML elements.  Possible future enhancements (not part of current project requirements) may include expandable/collapsible side menu options for each section that link to individual blog posts by date.
 
 ## Author(s)
 Jerry Yip
