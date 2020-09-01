@@ -17,7 +17,7 @@ The main homepage is accessed via the index.html file with the other html "blog 
 The supporting css files are separated based on functionality (e.g. mobile responsive, navigation bar, overall layout etc).  
 
 ### JavaScript (updated scope: dynamic landing page project)
-The supporting javascript file, "app.js", controls dynamic functionality on the landing page for both the creation of the top navigation menu and the side toggle menu based on the different 'sections' of the blog landing page (e.g. 'latest'/'travel'/'eats'/'thoughts').  As new sections are added or removed the top and side navigation menus would be updated accordingly.  Note the menus' 'about' link (and 'home' link for the side menu) is static as it is a permanent feature of the blog website.
+The supporting javascript file, "app.js", controls dynamic functionality on the landing page for both the creation of the top navigation menu and the side toggle 'dashboard' menu based on the different 'sections' of the blog landing page (e.g. 'latest'/'travel'/'eats'/'thoughts').  As new sections are added or removed the top and side navigation menus would be updated accordingly.  Note the menus' 'about' link (and 'home' link for the side menu) is static as it is a permanent feature of the blog website.
 
 ## Author(s)
 Jerry Yip
