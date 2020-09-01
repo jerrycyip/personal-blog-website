@@ -4,8 +4,8 @@ This project is part of Udacity's Front End Web Developer Nanodegree program.  T
 
 ## Tools Required
 Minimal tools are required to develop and run this project, as follows: 
-- text editor (or Integrated Dev envmt - IDE)  
-- web browser (e.g. chrome/safari/firefox)
+- text editor (e.g. [Atom](https://atom.io/)) or Integrated Development Environment - IDE (e.g. MS Visual Studio)
+- web browser (e.g. Chrome/Safari/Firefox)
 
 ## Development
 ### HTML (original scope: personal blog website project)
