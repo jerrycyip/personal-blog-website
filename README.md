@@ -1,4 +1,5 @@
-## Getting Started: personal-blog-website + dynamic-landing-page
+# Personal Blog Website with Dynamic Landing Page
+## Description
 This project is part of Udacity's Front End Web Developer Nanodegree program.  The original project ('personal blog website') was to create a personal blog website using only HTML and CSS, with emphasis on employing the latest CSS Grid and Flexbox features.  As part of the latest updates (9/1/2020), dynamic javascript functionality has been added to the main landing page to satisfy requirements for a dynamic 'landing page' project.  
 
 ### Design Considerations
