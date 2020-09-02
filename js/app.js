@@ -129,21 +129,29 @@ function buildSideNavMenu(){
     sidebar_menu.appendChild(fragmentSideMenu);
 }
 
-// Scroll to anchor ID using scrollIntoView event
+// Scroll to Section associated anchor IDs using scrollIntoView event
 function scrollOnClick() {
     navbar__list.addEventListener('click', function (event) {
         const scrollTarget = document.querySelector('#' +
         event.target.dataset.nav)
+        // exclude the static non-section links ('About' and 'Settings' links)
+        if (scrollTarget != null) {
         scrollTarget.scrollIntoView({behavior: 'smooth'});
-    })
+    }})
     sidebar_menu.addEventListener('click', function (event) {
         const scrollTarget = document.querySelector('#' +
         event.target.dataset.nav)
+        // exclude the static non-section links ('About' and 'Settings' links)
+        if (scrollTarget != null) {
         scrollTarget.scrollIntoView({behavior:'smooth'});
-    })
+    }})
 }
 
-// Event Listener to update classList of active and inactive section (titles)
+/* Event Listener to update styling and 'highlight' (figuratively speaking) the
+active Section while de-emphasizing the inactive Section.
+/* This is accomplished by toggling associated classLists to indicate Active
+state with (i) darker title color, (ii) background color bar for the Section
+title and (iii) addition of shadow boxing to blog cards */
 function setActiveClass() {
     window.addEventListener('scroll', function() {
         // loop through sections to determine which is near top of viewport
