@@ -1,5 +1,5 @@
 # Personal Blog Website with Dynamic Landing Page
-## Description
+## Project Description
 This project is part of Udacity's Front End Web Developer Nanodegree program.  The original project ('personal blog website') was to create a personal blog website using only HTML and CSS, with emphasis on employing the latest CSS Grid and Flexbox features.  As part of the latest updates (9/1/2020), dynamic javascript functionality has been added to the main landing page to satisfy requirements for a dynamic 'landing page' project.  
 
 ## Tools Required
@@ -7,7 +7,7 @@ Minimal tools are required to develop and run this project, as follows:
 - text editor (e.g. [Atom](https://atom.io/)) or Integrated Development Environment - IDE (e.g. MS Visual Studio)
 - web browser (e.g. Chrome/Safari/Firefox)
 
-## Development
+## Development & Instructions
 ### HTML (original scope: personal blog website project)
 The main homepage is accessed via the index.html file with the other html "blog post" files being linked to from the main homepage.
 
@@ -29,7 +29,7 @@ Note, this project intentionally explores and employs horizontal scroll (in addi
 ## Project Management
 The projects' different feature enhancements and bug fixes are tracked and recorded in the following project management ["kanban board"](https://trello.com/b/xpAXZ4Cj/language-blog-website-project)
 
-## Author(s)
+## Project Author(s)
 Jerry Yip
 - [GitHub](https://github.com/jerrycyip)
 - [LinkedIn](https://www.linkedin.com/in/jerrycyip/)
