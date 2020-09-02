@@ -1,5 +1,7 @@
 
-.navbar {
+/* for landing page project, please look at navbar__menu code below */
+/* you'll note navbar__menu is referred to by app.js */
+.topbar {
     grid-area: navbar; /* 1 / 1 / span 1 / span 1; */
     /* header navigation grid */
     display: grid;

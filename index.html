@@ -14,7 +14,9 @@
         </head>
     <body>
         <main class="grid-container">
-                <nav class="navbar">
+            <!-- for landing page project: please look @ navbar__menu code below -->
+            <!-- navbar__menu is referred to by app.js -->
+                <nav class="topbar">
                 <h1><a class="title" href=#>Daily Snapshots <span class="material-icons logo">collections</span></a></h1>
                 <form class="search-button">
                     <a href=#><span class="material-icons search">search</span></a>
@@ -35,30 +37,29 @@
             </div>
                 <a class="material-icons menu-button" href=#dashboard>dashboard</a>
             </nav>
-            <!-- HTML Follows BEM naming conventions
-            IDs are only used for sections to connect menu achors to sections -->
+            <!-- Landing page project code below: HTML Follows BEM naming
+            conventions. IDs are only used for sections to connect menu achors
+            to sections -->
             <header class="page__header">
                 <nav class="navbar__menu">
                     <h3 class="top-menu">
-                        <!-- Navigation starts as empty UL that will be populated with JS for main sections with event listener scrolling -->
+                        <!-- Navigation starts as empty UL that will be
+                        populated with JS for main sections with event
+                        listener scrolling -->
                         <ul id="navbar__list"></ul>
                     </h3>
                     <h2 class="title-description">A blog about my life</h2>
                 </nav>
             </header>
+            <!-- Extra bonus code below: for toggling side menu -->
             <nav id="dashboard">
                 <h3 class="side-menu">
                     <a href="#" class="material-icons close-sidebar">close</a>
                     <ul class="sidebar">
-                        <!-- Navigation starts as empty UL that will be populated with JS for main sections with event listener scrolling -->
-                        <!--
-                        <li><a href=#>Home</a><a href="#" class="material-icons sidebar-icons">home</a></li>
-                        <li><a href=#author-info>About </a><a href=#author-info class="material-icons sidebar-icons">portrait</a></li>
-                        <li><a href=#latest>Latest</a><a href="#" class="material-icons sidebar-icons">expand_more</a></li>
-                        <li><a href=#travel>Travel</a><a href="#" class="material-icons sidebar-icons">expand_more</a></li>
-                        <li><a href=#eats>Eats</a><a href="#" class="material-icons sidebar-icons">expand_more</a></li>
-                        <li><a href=#thoughts>Thoughts</a><a href="#" class="material-icons sidebar-icons">expand_more</a></li>
-                        <li><a href=#>Settings</a><a href="#" class="material-icons sidebar-icons">settings</a></li>-->
+                        <!-- Navigation starts as empty UL that will be
+                        populated with JS for main sections with event
+                        listener scrolling -->
+
                     </ul>
                 </h3>
             </nav>
