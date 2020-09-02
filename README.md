@@ -9,7 +9,7 @@ Minimal tools are required to develop and run this project, as follows:
 
 ## Development & Instructions
 ### HTML (original scope: personal blog website project)
-The main landing page is accessed via the index.html file with the other html "blog post" files being linked to from the main homepage.
+The main landing page (aka homepage) is accessed via the index.html file with the other html "blog post" files being linked to from the main homepage.
 
 ### CSS (original scope: personal blog website project)
 The supporting css files are separated based on functionality (e.g. mobile responsive, navigation bar, overall layout etc).  
