@@ -17,11 +17,11 @@
  * Define Global Variables
  *
 */
-// Retrieve navigation bar menu for population later
+// Retrieve navigation bar top menu for population later
 const navbar__list = document.querySelector('#navbar__list');
 // Retrieve navigation side bar menu for population later
 const sidebar_menu = document.querySelector('.sidebar');
-// Retrieve the NodeList of sections
+// Retrieve the NodeList of sections (corresponding to different blog topics)
 const sections = document.querySelectorAll('section.content-section');
 // ← to minimize reflow instances, use a DocumentFragment to add top Menu
 const fragmentTopMenu = document.createDocumentFragment();
@@ -57,7 +57,7 @@ function isInView(elem) {
  *
 */
 
-// build the top nav menu
+// build the main top navigation menu
 function buildTopNavMenu(){
     // First add the 'about me/author info' section
     // 'About' section is a custom sidebar toggle rather than a main section
@@ -88,7 +88,7 @@ function buildTopNavMenu(){
     navbar__list.appendChild(fragmentTopMenu);
 }
 
-// build the side navigation menu (accessed via dashboard button)
+// build the side navigation menu (accessed via dashboard toggle button)
 function buildSideNavMenu(){
     // First add the custom sections 'Home' and 'About Me'
     const newLi1 = document.createElement('li');
