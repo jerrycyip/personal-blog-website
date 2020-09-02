@@ -16,7 +16,7 @@ The supporting css files are separated based on functionality (e.g. mobile respo
 
 ### JavaScript (updated scope: dynamic landing page project)
 The supporting javascript file, "app.js", controls dynamic functionality on the landing page including: 
-- creation of both the top navigation menu and the side toggle 'dashboard' menu
+- creation of both the top navigation menu and the side toggle 'dashboard' menu with scroll to sections on click
 - active state to indicate the main viewable 'section' that is currently being viewed.
 
 The navigation menus are created based on the different 'sections' of the blog landing page (i.e. blog topics such as 'latest'/'travel'/'eats'/'thoughts') such that as new sections are added or removed the top and side navigation menus would be updated accordingly.  Note, the menus' 'about' link (and 'home' link for the side menu) is static as it is a permanent feature of the blog website.  When clicking these menu links, the page automatically scrolls to that section.  When sections are near the top/center of the screen their styling becomes 'active' with subtle design changes including the title bar being illuminated with a grey background color along with shadow-boxing for that section's row of blog cards.
