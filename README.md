@@ -27,7 +27,7 @@ To achieve said functionality, JavaScript functions and event listeners are empl
 Note, this project intentionally explores and employs horizontal scroll (in addition to traditional vertical scroll) as a way to optimize content display for the user while minimizing necessary up and down scroll -- a common feature of today's websites/apps which can often be a disorienting user experience and inefficient use of viewable screen real estate.  Although not necessarily common to news and blog sites, this design approach is employed by other media websites such as Netflix, Disney Plus, and Amazon as well as traditional print media (newspapers, magazines) -- for more background see ['skeuomorphic' design](https://en.wikipedia.org/wiki/Skeuomorph)
 
 ## Project Management
-The projects' many feature enhancements and bug fixes are tracked in the following project management ["kanban board"](https://trello.com/b/xpAXZ4Cj/language-blog-website-project)
+The projects' different feature enhancements and bug fixes are tracked and recorded in the following project management ["kanban board"](https://trello.com/b/xpAXZ4Cj/language-blog-website-project)
 
 ## Author(s)
 Jerry Yip
