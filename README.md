@@ -42,8 +42,11 @@ Jerry Yip
 ## Web App Result
 ### Homepage viewed on desktop
 ![Blog Homepage](/blog_home_preview_desktop.png)
+
+### Homepage viewed on mobile
+![Blog Homepage](/blog_home_preview_mobile.png)
+
 ### Blog post viewed on desktop
 ![Individual Blog Post](/blog_preview_desktop.png)
 
-## Mobile View Result (homepage)
-![Blog Homepage](/blog_home_preview_mobile.png)
+
