@@ -40,8 +40,10 @@ Jerry Yip
 - [LinkedIn](https://www.linkedin.com/in/jerrycyip/)
 
 ## Web App Result
+### Homepage viewed on desktop
 ![Blog Homepage](/blog_home_preview_desktop.png)
-![Individual Blog Page](/blog_preview_desktop.png)
+### Blog post viewed on desktop
+![Individual Blog Post](/blog_preview_desktop.png)
 
-## Mobile View Result
+## Mobile View Result (homepage)
 ![Blog Homepage](/blog_home_preview_mobile.png)
