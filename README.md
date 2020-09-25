@@ -1,6 +1,6 @@
 # Personal Blog Website with Dynamic Landing Page
 ## Project Description
-This project is part of Udacity's Front End Web Developer Nanodegree program.  The original project ('personal blog website') was to create a personal blog website using only HTML and CSS, with emphasis on employing the latest CSS Grid and Flexbox features.  As part of the latest updates (9/1/2020), dynamic javascript functionality has been added to the main landing page to satisfy requirements for a dynamic 'landing page' project.  
+This project is part of Udacity's Front End Web Developer Nanodegree program.  The original project ('personal blog website') was to create a personal blog website using only HTML and CSS, with emphasis on employing the latest CSS Grid and Flexbox features.  As part of the latest updates (9/1/2020), dynamic javascript functionality has been added to the main landing page to satisfy requirements for a dynamic 'landing page' project.  Screenshots of the resulting web app are also provided below for visual aid and illustration purposes.
 
 ## Tools Required
 Minimal tools are required to develop and run this project, as follows: 
@@ -39,4 +39,9 @@ Jerry Yip
 - [GitHub](https://github.com/jerrycyip)
 - [LinkedIn](https://www.linkedin.com/in/jerrycyip/)
 
+## Web App Result
+![Blog Homepage](/blog_home_preview_desktop.png)
+![Individual Blog Page](/blog_preview_desktop.png)
 
+## Mobile View Result
+![Blog Homepage](/blog_home_preview_mobile.png)
